@@ -1,1 +1,55 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply box-sizing: border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    font-family: Arial, sans-serif; /* Optional: Specify a font-family */
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    background-color: #333; /* Replace with your desired background color */
+    color: white;
+    padding: 20px;
+}
+
+/* Style the container for sections */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Style the sections */
+.section {
+    background-color: #fff; /* Replace with your desired background color */
+    border: 1px solid #000; /* Add a 1px black border */
+    margin-bottom: 20px; /* Adjust the spacing between sections */
+    padding: 20px; /* Add padding inside sections */
+    position: relative; /* Position for section title */
+    flex-basis: calc(33.33% - 20px); /* Equal width for desktop view */
+}
+
+/* Style the section title */
+.section-title {
+    background-color: #333; /* Replace with your desired background color */
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+}
+
+/* Style the section content (dummy text) */
 

@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Sections</title>
+    <style>
+        /* CSS to center-align the title */
+        h1 {
+            text-align: center;
+        }
+
+        /* CSS for styling the sections */
+        .section {
+            width: 30%; /* Adjust the width as needed for desktop */
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block; /* Display sections in the same line */
+            vertical-align: top; /* Align sections at the top */
+            position: relative; /* Add relative positioning to the outer section */
+        }
+
+        /* CSS to style the new section */
+        .inner-section {
+    border: 1px solid black;
+    background-color: rgb(229, 176, 176);
+    width: 112px;
+    height: 45px;
+    padding: 0px;
+    top: 0; /* Fix to the top */
+    right: 0; /* Fix to the right */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 10px 10px 10px auto; /* Add 'auto' to push it to the right */
+    text-align: center; /* Center text horizontally */
+}
+
+
+        /* Media query for tablet layout */
+        @media screen and (max-width: 768px) {
+            .section {
+                width: 45%; /* Adjust the width as needed for tablets */
+            }
+
+            /* Make the sections stack on top of each other */
+            .inner-section {
+                margin: 10px auto; /* Center-align inner sections */
+                display: block; /* Stack inner sections on top of each other */
+            }
+        }
+
+        /* Media query for mobile layout */
+        @media screen and (max-width: 480px) {
+            .section {
+                width: 100%; /* Make sections take up the full width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+
+    <div class="section">
+        <div class="inner-section" style="background-color: rgb(229, 176, 176);">
+            <h2 style="color: black;">Chicken</h2>
+        </div>
+        <p>Learn More with Coursera Plus. Invest in Your Career Goals. No Experience Necessary. Earn a Certificate. Enrol Now! Flexible Online Learning. A Path to In-Demand Jobs. Learn On Any Device. Learn at Your Own Pace. Achieve Your Goals. Stand Out to Employers.</p>
+    </div>
+
+    <div class="section">
+        <div class="inner-section" style="background-color: rgb(211, 96, 96); color: aliceblue;">
+            <h2>Beef</h2>
+        </div>
+        <p>Learn More with Coursera Plus. Invest in Your Career Goals. No Experience Necessary. Earn a Certificate. Enrol Now! Flexible Online Learning. A Path to In-Demand Jobs. Learn On Any Device. Learn at Your Own Pace. Achieve Your Goals. Stand Out to Employers.</p>
+    </div>
+
+    <div class="section">
+        <div class="inner-section" style="background-color: rgb(246, 249, 176);">
+            <h2>Sushi</h2>
+        </div>
+        <p>Learn More with Coursera Plus. Invest in Your Career Goals. No Experience Necessary. Earn a Certificate. Enrol Now! Flexible Online Learning. A Path to In-Demand Jobs. Learn On Any Device. Learn at Your Own Pace. Achieve Your Goals. Stand Out to Employers.</p>
+    </div>
+</body>
+</html>
 
